@@ -1,0 +1,16 @@
+{
+  "name": "fort-lauderdale-golf-cart-landing",
+  "version": "1.0.0",
+  "private": true,
+  "description": "High-conversion landing page for private golf cart experiences in Fort Lauderdale. Zero runtime dependencies.",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "node build.mjs",
+    "preview": "node build.mjs --preview",
+    "dev": "node scripts/dev.mjs",
+    "start": "node scripts/dev.mjs --no-watch"
+  }
+}
