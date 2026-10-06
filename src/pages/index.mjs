@@ -18,7 +18,7 @@ import { FinalCta } from '../components/sections/final-cta.mjs';
 import { Teaser } from '../components/sections/teaser.mjs';
 
 export function renderIndex(ctx) {
-  const head = ctx.preview ? html`<title>Fort Lauderdale Golf Cart Landing</title>` : html`${SeoHead(ctx)}\n${Schema(ctx)}`;
+  const head = ctx.preview ? html`<title>${ctx.main.schemaName}</title>` : html`${SeoHead(ctx)}\n${Schema(ctx)}`;
 
   const body = html`<a class="skip-link" href="#main">Skip to content</a>
 ${Header(ctx)}
